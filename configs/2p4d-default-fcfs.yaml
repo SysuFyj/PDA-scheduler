@@ -1,0 +1,52 @@
+model: ${VLLM_PD_MODEL}
+
+prefill:
+  - id: P0
+    url: http://127.0.0.1:8101
+    gpu: "1"
+    side_channel_port: 5601
+    transfer_host: 127.0.0.1
+  - id: P1
+    url: http://127.0.0.1:8102
+    gpu: "2"
+    side_channel_port: 5602
+    transfer_host: 127.0.0.1
+
+decode:
+  - id: D0
+    url: http://127.0.0.1:8203
+    gpu: "3"
+    side_channel_port: 5703
+  - id: D1
+    url: http://127.0.0.1:8204
+    gpu: "4"
+    side_channel_port: 5704
+  - id: D2
+    url: http://127.0.0.1:8205
+    gpu: "5"
+    side_channel_port: 5705
+  - id: D3
+    url: http://127.0.0.1:8206
+    gpu: "6"
+    side_channel_port: 5706
+
+router:
+  host: 127.0.0.1
+  port: 8300
+  strategy: default_fcfs
+  connect_timeout_s: 10
+  request_timeout_s: 1800
+  max_connections: 4096
+
+engine:
+  host: 127.0.0.1
+  tensor_parallel_size: 1
+  max_model_len: 32768
+  max_num_seqs: 256
+  prefill_gpu_memory_utilization: 0.90
+  decode_gpu_memory_utilization: 0.55
+  startup_timeout_s: 900
+  common_args:
+    - --enforce-eager
+  prefill_args: []
+  decode_args: []
