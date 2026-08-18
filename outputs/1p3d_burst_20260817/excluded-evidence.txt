@@ -1,0 +1,1 @@
+The excluded 800-request scan and exploratory 16K/32K attempts were pruned during the 2026-08-17 output cleanup. Their exclusion rationale remains summarized in VALIDITY_AUDIT.md and FINAL_EXPERIMENT_REPORT.md; they are not aggregation inputs.

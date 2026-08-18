@@ -1,0 +1,60 @@
+{
+  "decode_gpu_memory_utilization": 0.55,
+  "finished_at": 1786977469.4081695,
+  "formal_metadata": {
+    "background_rate": 5.840661277496174,
+    "background_requests": 1200,
+    "burst_cycles": 21,
+    "burst_pattern": [
+      16000,
+      512,
+      512
+    ],
+    "burst_requests": 63,
+    "burst_window_s": 2.0,
+    "ideal_per_decode_burst_requests": 21,
+    "ideal_per_decode_kv_fraction": 0.9632078751106055,
+    "ideal_per_decode_kv_tokens": 121919,
+    "last_arrival_offset_s": 205.40162587022488,
+    "last_burst_offset_s": 1.9057619047619045,
+    "source": "/data/fyj/project/PDA-scheduler/vllm_pd/data/traces/sample_1_2000.jsonl",
+    "total_requests": 1263,
+    "total_target_output_tokens": 1167503
+  },
+  "gpu_map": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "smoke_metadata": {
+    "background_rate": 5.840661277496174,
+    "background_requests": 300,
+    "burst_cycles": 18,
+    "burst_pattern": [
+      16000,
+      512,
+      512
+    ],
+    "burst_requests": 54,
+    "burst_window_s": 2.0,
+    "ideal_per_decode_burst_requests": 18,
+    "ideal_per_decode_kv_fraction": 0.8256067500948047,
+    "ideal_per_decode_kv_tokens": 104502,
+    "last_arrival_offset_s": 51.3094850594494,
+    "last_burst_offset_s": 1.8898888888888887,
+    "source": "/data/fyj/project/PDA-scheduler/vllm_pd/data/traces/sample_1_2000.jsonl",
+    "total_requests": 354,
+    "total_target_output_tokens": 531497
+  },
+  "smoke_passed": true,
+  "started_at": 1786975318.7673852,
+  "status": "completed",
+  "topology": "1P3D",
+  "vllm_instrumentation": {
+    "instrumented_sha256": "f5dab15c1cabf04af1fd605903461ee46e7b2b680f66f4e49dd691cf23311019",
+    "original_sha256": "5566aa2cdad3319cba1d25be88c0720948dbdd96babb7647af92d81be8870674",
+    "path": "/data/fyj/project/PDA-scheduler/vllm_pd/.venv/lib/python3.12/site-packages/vllm/v1/core/sched/scheduler.py"
+  },
+  "vllm_instrumentation_restored": true
+}

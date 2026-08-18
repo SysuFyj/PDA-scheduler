@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-17",
+  "decision": "APPROVE_PENDING_RESOURCE_AUTHORIZATION",
+  "independent_reviewer": false,
+  "reason": "User previously requested no sub-agent; conservative inline review used.",
+  "gpu": [1, 2, 3, 4],
+  "smoke_groups": 1,
+  "formal_groups": 3,
+  "max_measurement_requests": 4143,
+  "max_wall_minutes": 90
+}

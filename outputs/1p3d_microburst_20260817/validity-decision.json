@@ -1,0 +1,14 @@
+{
+  "date": "2026-08-17",
+  "classification": "VALID_POSITIVE",
+  "scope": "single paired synthetic 1P3D heterogeneous microburst",
+  "gates": {
+    "run_integrity": "PASS",
+    "treatment_integrity": "PASS",
+    "no_completion_mechanism_gate": "PASS",
+    "metric_validity": "PASS_WITH_LIMITATION",
+    "statistical_validity": "PASS_FOR_THIS_PAIRED_TRACE",
+    "external_validity": "LIMITED"
+  },
+  "independent_review": false
+}

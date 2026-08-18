@@ -14,6 +14,12 @@ Router 只负责两件事：请求到达时选择 Prefill，Prefill 完成后选
 `token_balance` 是简单的请求级预留策略，不声称等价于 vLLM 的真实 KV 使用量或剩余 token 工作量。
 所有策略都在 Prefill 完成后才进行 Decode 选择。
 
+Decode 调度内部按 `metric → feasibility filter → selector → atomic reservation`
+执行。请求完成或失败时按 reservation ID 幂等释放；可通过
+`router.reservation_timeout_s` 启用惰性超时回收。该配置默认关闭，避免对超长
+Decode 请求引入行为变化；启用后，过期 reservation 会在下一次调度、状态查询或
+显式回收时释放并计为失败。
+
 ## 项目结构
 
 ```text

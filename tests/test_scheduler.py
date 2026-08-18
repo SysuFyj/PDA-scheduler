@@ -3,11 +3,37 @@ from __future__ import annotations
 import unittest
 
 from vllm_pd_router.config import WorkerConfig
+from vllm_pd_router.decode_scheduling import (
+    DecodeCandidate,
+    DecodeFeasibilityFilter,
+    DecodeMetricProvider,
+    DecodeRequest,
+    DecodeReservationManager,
+    LeastActiveDecodeSelector,
+    WorkerState,
+)
 from vllm_pd_router.scheduler import LeastActiveScheduler
 
 
 def worker(worker_id: str, port: int) -> WorkerConfig:
     return WorkerConfig(worker_id=worker_id, url=f"http://127.0.0.1:{port}")
+
+
+class ExcludeWorkerFilter(DecodeFeasibilityFilter):
+    def __init__(self, excluded_worker_id: str) -> None:
+        self.excluded_worker_id = excluded_worker_id
+
+    def filter(
+        self,
+        candidates: tuple[DecodeCandidate, ...],
+        request: DecodeRequest,
+    ) -> tuple[DecodeCandidate, ...]:
+        del request
+        return tuple(
+            candidate
+            for candidate in candidates
+            if candidate.state.config.worker_id != self.excluded_worker_id
+        )
 
 
 class LeastActiveSchedulerTest(unittest.IsolatedAsyncioTestCase):
@@ -60,6 +86,13 @@ class LeastActiveSchedulerTest(unittest.IsolatedAsyncioTestCase):
         await self.scheduler.finish_decode(occupied, success=True)
         await self.scheduler.finish_decode(selected, success=True)
 
+    async def test_decode_selection_records_completed_snapshot(self) -> None:
+        first = await self.scheduler.acquire()
+        await self.scheduler.finish_prefill(first, success=True)
+        await self.scheduler.finish_decode(first, success=True)
+        second = await self.scheduler.acquire()
+        self.assertEqual(second.decode_completed_before, (1, 0, 0, 0))
+
     async def test_output_token_balance_uses_reserved_output_sum(self) -> None:
         scheduler = LeastActiveScheduler(
             (worker("P0", 8101),),
@@ -102,6 +135,50 @@ class LeastActiveSchedulerTest(unittest.IsolatedAsyncioTestCase):
             [selection.decode.worker_id for selection in selections],
             ["D0", "D1", "D0", "D1"],
         )
+
+    async def test_feasibility_filter_runs_before_selector(self) -> None:
+        scheduler = LeastActiveScheduler(
+            (worker("P0", 8101),),
+            (worker("D0", 8200), worker("D1", 8201)),
+            feasibility_filter=ExcludeWorkerFilter("D0"),
+        )
+        prefill = await scheduler.acquire_prefill()
+        selection = await scheduler.acquire_decode(prefill)
+        self.assertEqual(selection.decode.worker_id, "D1")
+        await scheduler.finish_decode(selection, success=True)
+
+    async def test_decode_release_is_idempotent(self) -> None:
+        prefill = await self.scheduler.acquire_prefill()
+        selection = await self.scheduler.acquire_decode(prefill, output_tokens=64)
+        await self.scheduler.finish_decode(selection, success=True)
+        await self.scheduler.finish_decode(selection, success=True)
+        snapshot = await self.scheduler.snapshot()
+        self.assertEqual(snapshot["decode"][0]["active"], 0)
+        self.assertEqual(snapshot["decode"][0]["completed"], 1)
+        self.assertEqual(snapshot["decode"][0]["reserved_output_tokens"], 0)
+
+    async def test_reservation_manager_reclaims_expired_reservation(self) -> None:
+        now = 100.0
+
+        def clock() -> float:
+            return now
+
+        workers = [WorkerState(worker("D0", 8200))]
+        manager = DecodeReservationManager(workers, timeout_s=5.0, clock=clock)
+        request = DecodeRequest(output_tokens=128)
+        candidates = DecodeMetricProvider().collect(workers, round_robin_start=0)
+        decision = LeastActiveDecodeSelector().select(candidates, request)
+        reservation = manager.reserve(decision, request)
+        self.assertEqual(manager.active_count, 1)
+        self.assertEqual(workers[0].active, 1)
+
+        now = 106.0
+        self.assertEqual(manager.reclaim_expired(), 1)
+        self.assertEqual(manager.active_count, 0)
+        self.assertEqual(workers[0].active, 0)
+        self.assertEqual(workers[0].reserved_output_tokens, 0)
+        self.assertEqual(workers[0].failed, 1)
+        self.assertFalse(manager.release(reservation.reservation_id, success=True))
 
 
 if __name__ == "__main__":

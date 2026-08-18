@@ -51,7 +51,10 @@ class ProxyRuntime:
             )
         else:
             self.scheduler = LeastActiveScheduler(
-                config.prefill, config.decode, strategy=config.router.strategy
+                config.prefill,
+                config.decode,
+                strategy=config.router.strategy,
+                reservation_timeout_s=config.router.reservation_timeout_s,
             )
         self.active_streams = 0
 
@@ -169,13 +172,15 @@ class ProxyRuntime:
         LOGGER.info(
             "route request_id=%s strategy=%s prefill=%s decode=%s "
             "prefill_elapsed_s=%.6f decode_active_before=%s "
-            "decode_score_name=%s decode_scores_before=%s reserved_output_tokens=%s",
+            "decode_completed_before=%s decode_score_name=%s "
+            "decode_scores_before=%s reserved_output_tokens=%s",
             request_id,
             self.config.router.strategy,
             selection.prefill.worker_id,
             selection.decode.worker_id,
             time.monotonic() - prefill_started,
             selection.decode_active_before,
+            selection.decode_completed_before,
             selection.decode_score_name,
             selection.decode_scores_before,
             selection.reserved_output_tokens,

@@ -1,0 +1,15 @@
+{
+  "date": "2026-08-17",
+  "classification": "VALID_POSITIVE",
+  "scope": "single paired synthetic 1P3D burst trace",
+  "gates": {
+    "run_integrity": "PASS",
+    "treatment_integrity": "PASS",
+    "bottleneck_validity": "PASS_WITH_LIMITATION",
+    "metric_validity": "PASS",
+    "statistical_validity": "PASS_FOR_PAIRED_TRACE_UNKNOWN_FOR_GENERALIZATION",
+    "external_validity": "LIMITED"
+  },
+  "independent_review": false,
+  "reason": "User requested no sub-agent; audit was performed inline by the executing agent."
+}

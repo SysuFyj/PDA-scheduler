@@ -20,15 +20,20 @@ def _pair_payload(selection: PairSelection) -> dict[str, Any]:
         "prefill_index": selection.prefill_index,
         "decode_index": selection.decode_index,
         "decode_active_before": selection.decode_active_before,
+        "decode_completed_before": selection.decode_completed_before,
         "decode_scores_before": selection.decode_scores_before,
         "decode_score_name": selection.decode_score_name,
         "reserved_output_tokens": selection.reserved_output_tokens,
+        "reservation_id": selection.reservation_id,
     }
 
 
 def create_app(config: ClusterConfig) -> FastAPI:
     scheduler = LeastActiveScheduler(
-        config.prefill, config.decode, strategy=config.router.strategy
+        config.prefill,
+        config.decode,
+        strategy=config.router.strategy,
+        reservation_timeout_s=config.router.reservation_timeout_s,
     )
 
     @asynccontextmanager
@@ -79,9 +84,11 @@ def create_app(config: ClusterConfig) -> FastAPI:
             decode_index=index,
             decode=config.decode[index],
             decode_active_before=(),
+            decode_completed_before=(),
             decode_scores_before=(),
             decode_score_name="",
             reserved_output_tokens=int(payload.get("reserved_output_tokens", 0)),
+            reservation_id=str(payload["reservation_id"]),
         )
         await scheduler.finish_decode(selection, bool(payload["success"]))
         return {"status": "ok"}

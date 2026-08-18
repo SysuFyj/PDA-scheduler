@@ -1,0 +1,10 @@
+strategy,request_class,preemption_events,unique_preempted_requests,recompute_tokens_approx,worker_counts
+default_fcfs,background,78,19,38770,"{""D2"": 78}"
+default_fcfs,burst_long,7,7,82984,"{""D2"": 7}"
+default_fcfs,burst_short,0,0,0,{}
+least_active,background,98,27,54994,"{""D2"": 98}"
+least_active,burst_long,14,12,141061,"{""D2"": 14}"
+least_active,burst_short,0,0,0,{}
+token_balance,background,0,0,0,{}
+token_balance,burst_long,1,1,15749,"{""D2"": 1}"
+token_balance,burst_short,0,0,0,{}

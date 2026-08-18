@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-17",
+  "report": "FINAL_EXPERIMENT_REPORT.md",
+  "validity_audit": "VALIDITY_AUDIT.md",
+  "validity_decision": "validity-decision.json",
+  "approval": "approval-manifest.json",
+  "tables": [
+    "tables/overall.csv",
+    "tables/burst-assignments.csv",
+    "tables/latency-by-class.csv",
+    "tables/request-preemptions.csv"
+  ],
+  "figures": [
+    "figures/waiting-over-time.png",
+    "figures/burst-kv-by-worker.png"
+  ],
+  "included_runs": [
+    "smoke/token_balance",
+    "formal/default_fcfs",
+    "formal/least_active",
+    "formal/token_balance"
+  ],
+  "excluded_runs": [
+    "../1p3d_microburst_20260817_excluded_attempt_path_match"
+  ]
+}

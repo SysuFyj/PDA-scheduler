@@ -47,6 +47,7 @@ class RouterConfig:
     api_key: str | None = None
     workers: int = 1
     scheduler_port: int = 8299
+    reservation_timeout_s: float | None = None
     access_log: bool = False
 
 
@@ -113,6 +114,11 @@ def load_config(path: str | Path) -> ClusterConfig:
         api_key=str(router_raw["api_key"]) if router_raw.get("api_key") else None,
         workers=int(router_raw.get("workers", 1)),
         scheduler_port=int(router_raw.get("scheduler_port", 8299)),
+        reservation_timeout_s=(
+            float(router_raw["reservation_timeout_s"])
+            if router_raw.get("reservation_timeout_s") is not None
+            else None
+        ),
         access_log=bool(router_raw.get("access_log", False)),
     )
     supported = {
@@ -135,12 +141,18 @@ def load_config(path: str | Path) -> ClusterConfig:
         api_key=router.api_key,
         workers=router.workers,
         scheduler_port=router.scheduler_port,
+        reservation_timeout_s=router.reservation_timeout_s,
         access_log=router.access_log,
     )
     if router.workers < 1:
         raise ValueError("router.workers must be at least 1")
     if router.workers > 1 and router.scheduler_port == router.port:
         raise ValueError("router.scheduler_port must differ from router.port")
+    if (
+        router.reservation_timeout_s is not None
+        and router.reservation_timeout_s <= 0
+    ):
+        raise ValueError("router.reservation_timeout_s must be positive")
 
     engine_raw = raw.get("engine") or {}
     engine = EngineConfig(

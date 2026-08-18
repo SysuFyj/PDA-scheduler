@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-17",
+  "language": "zh-CN",
+  "report": "FINAL_EXPERIMENT_REPORT.md",
+  "validity_audit": "VALIDITY_AUDIT.md",
+  "validity_decision": "validity-decision.json",
+  "tables": [
+    "tables/overall.csv",
+    "tables/phase-latency-and-pressure.csv",
+    "tables/assignments.csv"
+  ],
+  "figures": [
+    "figures/waiting-over-time.png",
+    "figures/kv-over-time.png"
+  ],
+  "included_runs": [
+    "formal/default_fcfs",
+    "formal/least_active",
+    "formal/token_balance"
+  ],
+  "excluded_runs": [],
+  "pruned_exploratory_runs": [
+    "800-request short scan",
+    "16K exploratory burst",
+    "32K exploratory burst"
+  ]
+}

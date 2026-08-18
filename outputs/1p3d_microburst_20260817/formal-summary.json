@@ -1,0 +1,4088 @@
+[
+  {
+    "burst_route_count_gate": true,
+    "client_queue_s": {
+      "mean": 8.116820598535847e-06,
+      "p50": 5.5516138672828674e-06,
+      "p95": 1.0658055543899536e-05,
+      "p99": 1.9833892583847008e-05
+    },
+    "completed": 1263,
+    "e2e_s": {
+      "mean": 29.788867415355185,
+      "p50": 16.07886252552271,
+      "p95": 69.4219673584215,
+      "p99": 408.55121249666433
+    },
+    "failed": 0,
+    "latency_classes": {
+      "all": {
+        "completed": 1263,
+        "e2e_s": {
+          "mean": 29.788867415355185,
+          "p95": 69.4219673584215,
+          "p99": 408.55121249666433
+        },
+        "tpot_s": {
+          "mean": 0.029863042793487504,
+          "p95": 0.02960550355912445,
+          "p99": 0.11862942236137
+        },
+        "ttft_s": {
+          "mean": 3.08166717282944,
+          "p95": 0.22468526102602474,
+          "p99": 213.20969386067236
+        }
+      },
+      "background": {
+        "completed": 1200,
+        "e2e_s": {
+          "mean": 23.453712526586994,
+          "p95": 47.08698122063651,
+          "p99": 235.4710988426395
+        },
+        "tpot_s": {
+          "mean": 0.03041305286199522,
+          "p95": 0.029563768380654942,
+          "p99": 0.12062390864264802
+        },
+        "ttft_s": {
+          "mean": 3.2349974605906753,
+          "p95": 0.22511012810282408,
+          "p99": 213.53409780816173
+        }
+      },
+      "burst_long": {
+        "completed": 21,
+        "e2e_s": {
+          "mean": 435.19584065684603,
+          "p95": 536.4739317018539,
+          "p99": 544.5789023924619
+        },
+        "tpot_s": {
+          "mean": 0.027191739700728693,
+          "p95": 0.03352145753893774,
+          "p99": 0.03402844449804765
+        },
+        "ttft_s": {
+          "mean": 0.15519718488767034,
+          "p95": 0.19768970645964146,
+          "p99": 0.20421586371958256
+        }
+      },
+      "burst_short": {
+        "completed": 42,
+        "e2e_s": {
+          "mean": 8.089806187986618,
+          "p95": 8.60260168737732,
+          "p99": 8.641915899356828
+        },
+        "tpot_s": {
+          "mean": 0.015510311909575391,
+          "p95": 0.016524745126067133,
+          "p99": 0.016586077615341678
+        },
+        "ttft_s": {
+          "mean": 0.1640368021935934,
+          "p95": 0.20054078847169876,
+          "p99": 0.2036649444606155
+        }
+      }
+    },
+    "metrics": {
+      "first_waiting_s": 7.393544726073742,
+      "samples": 527,
+      "waiting_request_seconds_approx": 7274.0,
+      "workers": {
+        "D0": {
+          "peak_kv": 0.8884955752212389,
+          "peak_running": 47.0,
+          "peak_waiting": 1.0,
+          "preemptions": 0.0
+        },
+        "D1": {
+          "peak_kv": 0.34791403286978506,
+          "peak_running": 43.0,
+          "peak_waiting": 1.0,
+          "preemptions": 0.0
+        },
+        "D2": {
+          "peak_kv": 1.0,
+          "peak_running": 56.0,
+          "peak_waiting": 39.0,
+          "preemptions": 85.0
+        }
+      }
+    },
+    "preemptions": {
+      "per_request": {
+        "background-0840": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 3300
+        },
+        "background-1035": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 2009
+        },
+        "background-1068": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 1709
+        },
+        "background-1089": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 2515
+        },
+        "background-1101": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 906
+        },
+        "background-1104": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 1207
+        },
+        "background-1107": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 1135
+        },
+        "background-1113": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 4345
+        },
+        "background-1116": {
+          "preemptions": 13,
+          "recompute_tokens_approx": 6539
+        },
+        "background-1119": {
+          "preemptions": 11,
+          "recompute_tokens_approx": 4898
+        },
+        "background-1122": {
+          "preemptions": 11,
+          "recompute_tokens_approx": 4042
+        },
+        "background-1125": {
+          "preemptions": 9,
+          "recompute_tokens_approx": 2738
+        },
+        "background-1128": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 980
+        },
+        "background-1131": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 856
+        },
+        "background-1134": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 736
+        },
+        "background-1137": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 309
+        },
+        "background-1140": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 143
+        },
+        "background-1143": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 272
+        },
+        "background-1146": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 131
+        },
+        "microburst-024": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 15792
+        },
+        "microburst-030": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 14028
+        },
+        "microburst-039": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 12605
+        },
+        "microburst-048": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 11441
+        },
+        "microburst-051": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 10483
+        },
+        "microburst-054": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 9668
+        },
+        "microburst-060": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 8967
+        }
+      },
+      "records": [
+        {
+          "computed_tokens": 145,
+          "preemption_count": 1,
+          "request_id": "background-1137",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 164,
+          "preemption_count": 1,
+          "request_id": "background-1134",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 187,
+          "preemption_count": 1,
+          "request_id": "background-1131",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 207,
+          "preemption_count": 1,
+          "request_id": "background-1128",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 229,
+          "preemption_count": 1,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 251,
+          "preemption_count": 1,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 134,
+          "preemption_count": 1,
+          "request_id": "background-1143",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 131,
+          "preemption_count": 1,
+          "request_id": "background-1146",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 138,
+          "preemption_count": 2,
+          "request_id": "background-1143",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 143,
+          "preemption_count": 1,
+          "request_id": "background-1140",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 164,
+          "preemption_count": 2,
+          "request_id": "background-1137",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 187,
+          "preemption_count": 2,
+          "request_id": "background-1134",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 214,
+          "preemption_count": 2,
+          "request_id": "background-1131",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 190,
+          "preemption_count": 3,
+          "request_id": "background-1134",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 221,
+          "preemption_count": 3,
+          "request_id": "background-1131",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 250,
+          "preemption_count": 2,
+          "request_id": "background-1128",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 279,
+          "preemption_count": 2,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 307,
+          "preemption_count": 2,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 330,
+          "preemption_count": 1,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 357,
+          "preemption_count": 1,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 365,
+          "preemption_count": 2,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 372,
+          "preemption_count": 3,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 312,
+          "preemption_count": 3,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 343,
+          "preemption_count": 2,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 394,
+          "preemption_count": 4,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 285,
+          "preemption_count": 3,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 325,
+          "preemption_count": 4,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 251,
+          "preemption_count": 3,
+          "request_id": "background-1128",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 294,
+          "preemption_count": 4,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 342,
+          "preemption_count": 5,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 390,
+          "preemption_count": 3,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 452,
+          "preemption_count": 5,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 515,
+          "preemption_count": 1,
+          "request_id": "background-1113",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 564,
+          "preemption_count": 1,
+          "request_id": "background-1107",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 599,
+          "preemption_count": 1,
+          "request_id": "background-1104",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 608,
+          "preemption_count": 2,
+          "request_id": "background-1104",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 571,
+          "preemption_count": 2,
+          "request_id": "background-1107",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 521,
+          "preemption_count": 2,
+          "request_id": "background-1113",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 397,
+          "preemption_count": 4,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 471,
+          "preemption_count": 6,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 556,
+          "preemption_count": 3,
+          "request_id": "background-1113",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 472,
+          "preemption_count": 7,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 297,
+          "preemption_count": 5,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 355,
+          "preemption_count": 6,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 422,
+          "preemption_count": 5,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 521,
+          "preemption_count": 8,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 423,
+          "preemption_count": 6,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 538,
+          "preemption_count": 9,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 435,
+          "preemption_count": 7,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 566,
+          "preemption_count": 10,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 704,
+          "preemption_count": 4,
+          "request_id": "background-1113",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 906,
+          "preemption_count": 1,
+          "request_id": "background-1101",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1013,
+          "preemption_count": 1,
+          "request_id": "background-1089",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 305,
+          "preemption_count": 6,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 374,
+          "preemption_count": 7,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 470,
+          "preemption_count": 8,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 622,
+          "preemption_count": 11,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 473,
+          "preemption_count": 9,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 647,
+          "preemption_count": 12,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 386,
+          "preemption_count": 8,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 195,
+          "preemption_count": 4,
+          "request_id": "background-1134",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 234,
+          "preemption_count": 4,
+          "request_id": "background-1131",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 272,
+          "preemption_count": 4,
+          "request_id": "background-1128",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 339,
+          "preemption_count": 7,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 435,
+          "preemption_count": 9,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 560,
+          "preemption_count": 10,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 762,
+          "preemption_count": 13,
+          "request_id": "background-1116",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 960,
+          "preemption_count": 5,
+          "request_id": "background-1113",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 352,
+          "preemption_count": 8,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 466,
+          "preemption_count": 10,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 358,
+          "preemption_count": 9,
+          "request_id": "background-1125",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 489,
+          "preemption_count": 11,
+          "request_id": "background-1122",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 655,
+          "preemption_count": 11,
+          "request_id": "background-1119",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1089,
+          "preemption_count": 6,
+          "request_id": "background-1113",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1502,
+          "preemption_count": 2,
+          "request_id": "background-1089",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1709,
+          "preemption_count": 1,
+          "request_id": "background-1068",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 2009,
+          "preemption_count": 1,
+          "request_id": "background-1035",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 3300,
+          "preemption_count": 1,
+          "request_id": "background-0840",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 8967,
+          "preemption_count": 1,
+          "request_id": "microburst-060",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 9668,
+          "preemption_count": 1,
+          "request_id": "microburst-054",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 10483,
+          "preemption_count": 1,
+          "request_id": "microburst-051",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 11441,
+          "preemption_count": 1,
+          "request_id": "microburst-048",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 12605,
+          "preemption_count": 1,
+          "request_id": "microburst-039",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 14028,
+          "preemption_count": 1,
+          "request_id": "microburst-030",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 15792,
+          "preemption_count": 1,
+          "request_id": "microburst-024",
+          "worker": "D2"
+        }
+      ],
+      "total_preemptions": 85,
+      "total_recompute_tokens_approx": 121754
+    },
+    "request_throughput": 2.3025862424993884,
+    "response_headers_s": {
+      "mean": 0.057903260053065404,
+      "p50": 0.05565760098397732,
+      "p95": 0.07831512624397874,
+      "p99": 0.10447066880762554
+    },
+    "returncode": 0,
+    "routes": {
+      "assignments": {
+        "D0": {
+          "long": 7,
+          "output_tokens": 119168,
+          "requests": 21,
+          "short": 14
+        },
+        "D1": {
+          "long": 0,
+          "output_tokens": 10752,
+          "requests": 21,
+          "short": 21
+        },
+        "D2": {
+          "long": 14,
+          "output_tokens": 227584,
+          "requests": 21,
+          "short": 7
+        }
+      },
+      "first_completed_snapshot": [
+        3,
+        3,
+        2
+      ],
+      "last_completed_snapshot": [
+        3,
+        3,
+        2
+      ],
+      "routes": [
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-001",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-000",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-002",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-003",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-005",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-004",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-006",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-008",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-007",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-009",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-010",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-011",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-012",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-013",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-014",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-015",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-016",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-017",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-018",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-020",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-019",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-021",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-022",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-023",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-024",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-026",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-025",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-028",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-027",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-029",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-030",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-031",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-032",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-034",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-033",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-035",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-037",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-036",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-038",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-039",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-040",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-041",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-043",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-042",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-044",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-046",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-045",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-047",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-048",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-049",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-050",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-051",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-052",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-053",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-054",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-056",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-055",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-058",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-057",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-059",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-060",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-061",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-062",
+          "strategy": "default_fcfs",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        }
+      ],
+      "strict_completed_gate": true
+    },
+    "strategy": "default_fcfs",
+    "submitted": 1263,
+    "success_rate": 1.0,
+    "target_tokens": 1167503,
+    "token_throughput": 2128.4848344234074,
+    "tpot_s": {
+      "mean": 0.029863042793487504,
+      "p50": 0.02645898454966361,
+      "p95": 0.02960550355912445,
+      "p99": 0.11862942236137
+    },
+    "ttft_s": {
+      "mean": 3.08166717282944,
+      "p50": 0.18236317858099937,
+      "p95": 0.22468526102602474,
+      "p99": 213.20969386067236
+    },
+    "wall_s": 548.51365681272
+  },
+  {
+    "burst_route_count_gate": true,
+    "client_queue_s": {
+      "mean": 6.0357098848878256e-06,
+      "p50": 5.5674463510513306e-06,
+      "p95": 9.299721568822834e-06,
+      "p99": 1.437935978174208e-05
+    },
+    "completed": 1263,
+    "e2e_s": {
+      "mean": 31.975778349726856,
+      "p50": 15.881831720471382,
+      "p95": 95.1000777785656,
+      "p99": 398.7727458389103
+    },
+    "failed": 0,
+    "latency_classes": {
+      "all": {
+        "completed": 1263,
+        "e2e_s": {
+          "mean": 31.975778349726856,
+          "p95": 95.1000777785656,
+          "p99": 398.7727458389103
+        },
+        "tpot_s": {
+          "mean": 0.030161143994835948,
+          "p95": 0.029201525140676525,
+          "p99": 0.162911191026621
+        },
+        "ttft_s": {
+          "mean": 4.202943115188392,
+          "p95": 0.21770289735868573,
+          "p99": 246.4347503967581
+        }
+      },
+      "background": {
+        "completed": 1200,
+        "e2e_s": {
+          "mean": 25.18817992229791,
+          "p95": 49.036004240345136,
+          "p99": 278.90095898165373
+        },
+        "tpot_s": {
+          "mean": 0.03069537374163931,
+          "p95": 0.029099635820825462,
+          "p99": 0.1663722766171826
+        },
+        "ttft_s": {
+          "mean": 4.415231141218294,
+          "p95": 0.2181555370800197,
+          "p99": 247.60368368485942
+        }
+      },
+      "burst_long": {
+        "completed": 21,
+        "e2e_s": {
+          "mean": 467.7345717161273,
+          "p95": 588.1919709583744,
+          "p99": 593.4734116410837
+        },
+        "tpot_s": {
+          "mean": 0.0292257549723269,
+          "p95": 0.03675584053756095,
+          "p99": 0.037084564213805196
+        },
+        "ttft_s": {
+          "mean": 0.1517179138692362,
+          "p95": 0.1809992352500558,
+          "p99": 0.19771578554064037
+        }
+      },
+      "burst_short": {
+        "completed": 42,
+        "e2e_s": {
+          "mean": 8.027765307353722,
+          "p95": 8.180550462566316,
+          "p99": 8.405527024883778
+        },
+        "tpot_s": {
+          "mean": 0.015390570966318401,
+          "p95": 0.015673308863182446,
+          "p99": 0.016123459894108037
+        },
+        "ttft_s": {
+          "mean": 0.16318354356501782,
+          "p95": 0.20225809384137391,
+          "p99": 0.21408488651737567
+        }
+      }
+    },
+    "metrics": {
+      "first_waiting_s": 5.323490336537361,
+      "samples": 572,
+      "waiting_request_seconds_approx": 10300.0,
+      "workers": {
+        "D0": {
+          "peak_kv": 0.35044247787610616,
+          "peak_running": 53.0,
+          "peak_waiting": 1.0,
+          "preemptions": 0.0
+        },
+        "D1": {
+          "peak_kv": 0.44791403286978504,
+          "peak_running": 54.0,
+          "peak_waiting": 1.0,
+          "preemptions": 0.0
+        },
+        "D2": {
+          "peak_kv": 1.0,
+          "peak_running": 46.0,
+          "peak_waiting": 48.0,
+          "preemptions": 112.0
+        }
+      }
+    },
+    "preemptions": {
+      "per_request": {
+        "background-0701": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 1864
+        },
+        "background-0743": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 1532
+        },
+        "background-0758": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 2947
+        },
+        "background-0810": {
+          "preemptions": 3,
+          "recompute_tokens_approx": 3121
+        },
+        "background-0812": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 971
+        },
+        "background-0834": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 390
+        },
+        "background-0839": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 3110
+        },
+        "background-0842": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 2711
+        },
+        "background-0843": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 2494
+        },
+        "background-0854": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 1936
+        },
+        "background-0859": {
+          "preemptions": 3,
+          "recompute_tokens_approx": 611
+        },
+        "background-0860": {
+          "preemptions": 7,
+          "recompute_tokens_approx": 1678
+        },
+        "background-0863": {
+          "preemptions": 5,
+          "recompute_tokens_approx": 1042
+        },
+        "background-0866": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 408
+        },
+        "background-0869": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 199
+        },
+        "background-0879": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 332
+        },
+        "background-0886": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 157
+        },
+        "background-0928": {
+          "preemptions": 3,
+          "recompute_tokens_approx": 2706
+        },
+        "background-0938": {
+          "preemptions": 7,
+          "recompute_tokens_approx": 5063
+        },
+        "background-0948": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 3060
+        },
+        "background-0959": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 2639
+        },
+        "background-0964": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 3744
+        },
+        "background-1037": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 1288
+        },
+        "background-1085": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 2146
+        },
+        "background-1135": {
+          "preemptions": 6,
+          "recompute_tokens_approx": 2917
+        },
+        "background-1159": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 1763
+        },
+        "background-1177": {
+          "preemptions": 4,
+          "recompute_tokens_approx": 4165
+        },
+        "microburst-024": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 15792
+        },
+        "microburst-027": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 26256
+        },
+        "microburst-030": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 12620
+        },
+        "microburst-033": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 11466
+        },
+        "microburst-036": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 10505
+        },
+        "microburst-042": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 9686
+        },
+        "microburst-045": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 8983
+        },
+        "microburst-048": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 8383
+        },
+        "microburst-051": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 7851
+        },
+        "microburst-054": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 7383
+        },
+        "microburst-057": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 6968
+        },
+        "microburst-060": {
+          "preemptions": 2,
+          "recompute_tokens_approx": 15168
+        }
+      },
+      "records": [
+        {
+          "computed_tokens": 136,
+          "preemption_count": 1,
+          "request_id": "background-0863",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 156,
+          "preemption_count": 1,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 166,
+          "preemption_count": 1,
+          "request_id": "background-0859",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 203,
+          "preemption_count": 1,
+          "request_id": "background-0854",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 269,
+          "preemption_count": 1,
+          "request_id": "background-0843",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 161,
+          "preemption_count": 2,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 175,
+          "preemption_count": 2,
+          "request_id": "background-0859",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 216,
+          "preemption_count": 2,
+          "request_id": "background-0854",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 288,
+          "preemption_count": 2,
+          "request_id": "background-0843",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 305,
+          "preemption_count": 1,
+          "request_id": "background-0842",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 332,
+          "preemption_count": 1,
+          "request_id": "background-0839",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 309,
+          "preemption_count": 2,
+          "request_id": "background-0842",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 346,
+          "preemption_count": 2,
+          "request_id": "background-0839",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 390,
+          "preemption_count": 1,
+          "request_id": "background-0834",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 144,
+          "preemption_count": 1,
+          "request_id": "background-0879",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 157,
+          "preemption_count": 1,
+          "request_id": "background-0886",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 188,
+          "preemption_count": 2,
+          "request_id": "background-0879",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 199,
+          "preemption_count": 1,
+          "request_id": "background-0869",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 203,
+          "preemption_count": 1,
+          "request_id": "background-0866",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 217,
+          "preemption_count": 2,
+          "request_id": "background-0863",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 249,
+          "preemption_count": 3,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 270,
+          "preemption_count": 3,
+          "request_id": "background-0859",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 219,
+          "preemption_count": 3,
+          "request_id": "background-0863",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 257,
+          "preemption_count": 4,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 205,
+          "preemption_count": 2,
+          "request_id": "background-0866",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 232,
+          "preemption_count": 4,
+          "request_id": "background-0863",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 276,
+          "preemption_count": 5,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 354,
+          "preemption_count": 3,
+          "request_id": "background-0854",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 438,
+          "preemption_count": 3,
+          "request_id": "background-0843",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 473,
+          "preemption_count": 3,
+          "request_id": "background-0842",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 528,
+          "preemption_count": 3,
+          "request_id": "background-0839",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 479,
+          "preemption_count": 4,
+          "request_id": "background-0842",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 550,
+          "preemption_count": 4,
+          "request_id": "background-0839",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 238,
+          "preemption_count": 5,
+          "request_id": "background-0863",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 289,
+          "preemption_count": 6,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 379,
+          "preemption_count": 4,
+          "request_id": "background-0854",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 476,
+          "preemption_count": 4,
+          "request_id": "background-0843",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 534,
+          "preemption_count": 5,
+          "request_id": "background-0842",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 626,
+          "preemption_count": 5,
+          "request_id": "background-0839",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 386,
+          "preemption_count": 5,
+          "request_id": "background-0854",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 498,
+          "preemption_count": 5,
+          "request_id": "background-0843",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 290,
+          "preemption_count": 7,
+          "request_id": "background-0860",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 398,
+          "preemption_count": 6,
+          "request_id": "background-0854",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 525,
+          "preemption_count": 6,
+          "request_id": "background-0843",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 611,
+          "preemption_count": 6,
+          "request_id": "background-0842",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 728,
+          "preemption_count": 6,
+          "request_id": "background-0839",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 971,
+          "preemption_count": 1,
+          "request_id": "background-0812",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1024,
+          "preemption_count": 1,
+          "request_id": "background-0810",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1379,
+          "preemption_count": 1,
+          "request_id": "background-0758",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1532,
+          "preemption_count": 1,
+          "request_id": "background-0743",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1864,
+          "preemption_count": 1,
+          "request_id": "background-0701",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 6593,
+          "preemption_count": 1,
+          "request_id": "microburst-060",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 6968,
+          "preemption_count": 1,
+          "request_id": "microburst-057",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 7383,
+          "preemption_count": 1,
+          "request_id": "microburst-054",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 7851,
+          "preemption_count": 1,
+          "request_id": "microburst-051",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 8383,
+          "preemption_count": 1,
+          "request_id": "microburst-048",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 8983,
+          "preemption_count": 1,
+          "request_id": "microburst-045",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 9686,
+          "preemption_count": 1,
+          "request_id": "microburst-042",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 10505,
+          "preemption_count": 1,
+          "request_id": "microburst-036",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 11466,
+          "preemption_count": 1,
+          "request_id": "microburst-033",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 12620,
+          "preemption_count": 1,
+          "request_id": "microburst-030",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 14032,
+          "preemption_count": 1,
+          "request_id": "microburst-027",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 15792,
+          "preemption_count": 1,
+          "request_id": "microburst-024",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 12224,
+          "preemption_count": 2,
+          "request_id": "microburst-027",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1026,
+          "preemption_count": 2,
+          "request_id": "background-0810",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1071,
+          "preemption_count": 3,
+          "request_id": "background-0810",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1568,
+          "preemption_count": 2,
+          "request_id": "background-0758",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 410,
+          "preemption_count": 1,
+          "request_id": "background-1177",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 419,
+          "preemption_count": 1,
+          "request_id": "background-1159",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 432,
+          "preemption_count": 1,
+          "request_id": "background-1135",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 423,
+          "preemption_count": 2,
+          "request_id": "background-1159",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 446,
+          "preemption_count": 2,
+          "request_id": "background-1135",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 456,
+          "preemption_count": 3,
+          "request_id": "background-1135",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 482,
+          "preemption_count": 1,
+          "request_id": "background-1085",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 487,
+          "preemption_count": 2,
+          "request_id": "background-1085",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 515,
+          "preemption_count": 1,
+          "request_id": "background-1037",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 533,
+          "preemption_count": 1,
+          "request_id": "background-0964",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 556,
+          "preemption_count": 1,
+          "request_id": "background-0959",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 576,
+          "preemption_count": 1,
+          "request_id": "background-0948",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 596,
+          "preemption_count": 1,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 604,
+          "preemption_count": 2,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 619,
+          "preemption_count": 3,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 647,
+          "preemption_count": 4,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 716,
+          "preemption_count": 1,
+          "request_id": "background-0928",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 661,
+          "preemption_count": 5,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 766,
+          "preemption_count": 2,
+          "request_id": "background-0928",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 543,
+          "preemption_count": 2,
+          "request_id": "background-0964",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 589,
+          "preemption_count": 2,
+          "request_id": "background-0959",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 559,
+          "preemption_count": 3,
+          "request_id": "background-0964",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 582,
+          "preemption_count": 4,
+          "request_id": "background-0964",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 602,
+          "preemption_count": 5,
+          "request_id": "background-0964",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 727,
+          "preemption_count": 3,
+          "request_id": "background-0959",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 796,
+          "preemption_count": 2,
+          "request_id": "background-0948",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 928,
+          "preemption_count": 6,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 824,
+          "preemption_count": 3,
+          "request_id": "background-0948",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1008,
+          "preemption_count": 7,
+          "request_id": "background-0938",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1224,
+          "preemption_count": 3,
+          "request_id": "background-0928",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 864,
+          "preemption_count": 4,
+          "request_id": "background-0948",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 767,
+          "preemption_count": 4,
+          "request_id": "background-0959",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 488,
+          "preemption_count": 3,
+          "request_id": "background-1085",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 472,
+          "preemption_count": 4,
+          "request_id": "background-1135",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 419,
+          "preemption_count": 2,
+          "request_id": "background-1177",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 457,
+          "preemption_count": 3,
+          "request_id": "background-1159",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 537,
+          "preemption_count": 5,
+          "request_id": "background-1135",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 464,
+          "preemption_count": 4,
+          "request_id": "background-1159",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 574,
+          "preemption_count": 6,
+          "request_id": "background-1135",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 689,
+          "preemption_count": 4,
+          "request_id": "background-1085",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 773,
+          "preemption_count": 2,
+          "request_id": "background-1037",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 925,
+          "preemption_count": 6,
+          "request_id": "background-0964",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 8575,
+          "preemption_count": 2,
+          "request_id": "microburst-060",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1616,
+          "preemption_count": 3,
+          "request_id": "background-1177",
+          "worker": "D2"
+        },
+        {
+          "computed_tokens": 1720,
+          "preemption_count": 4,
+          "request_id": "background-1177",
+          "worker": "D2"
+        }
+      ],
+      "total_preemptions": 112,
+      "total_recompute_tokens_approx": 196055
+    },
+    "request_throughput": 2.1166368142813825,
+    "response_headers_s": {
+      "mean": 0.0557151018293104,
+      "p50": 0.053047637455165386,
+      "p95": 0.07827246785163874,
+      "p99": 0.11414449607953427
+    },
+    "returncode": 0,
+    "routes": {
+      "assignments": {
+        "D0": {
+          "long": 0,
+          "output_tokens": 10752,
+          "requests": 21,
+          "short": 21
+        },
+        "D1": {
+          "long": 2,
+          "output_tokens": 41728,
+          "requests": 21,
+          "short": 19
+        },
+        "D2": {
+          "long": 19,
+          "output_tokens": 305024,
+          "requests": 21,
+          "short": 2
+        }
+      },
+      "first_completed_snapshot": [
+        3,
+        3,
+        2
+      ],
+      "last_completed_snapshot": [
+        3,
+        3,
+        2
+      ],
+      "routes": [
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-000",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-005",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-003",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-004",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-001",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-002",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-006",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-008",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-007",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-009",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-010",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-011",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-012",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-013",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-014",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-015",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-016",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-017",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-018",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-020",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-019",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-021",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-022",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-023",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-024",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-025",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-026",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-027",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-028",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-029",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-030",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-031",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-032",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-033",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-034",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-035",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-036",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-037",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-038",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-040",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-041",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-039",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-042",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-043",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-044",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-045",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-047",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-046",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-048",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-050",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-049",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-051",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-052",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-053",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-054",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-056",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-055",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-057",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-058",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-059",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-060",
+          "strategy": "least_active",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-061",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-062",
+          "strategy": "least_active",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        }
+      ],
+      "strict_completed_gate": true
+    },
+    "strategy": "least_active",
+    "submitted": 1263,
+    "success_rate": 1.0,
+    "target_tokens": 1167503,
+    "token_throughput": 1956.5952736215017,
+    "tpot_s": {
+      "mean": 0.030161143994835948,
+      "p50": 0.026496929523052725,
+      "p95": 0.029201525140676525,
+      "p99": 0.162911191026621
+    },
+    "ttft_s": {
+      "mean": 4.202943115188392,
+      "p50": 0.1796053582802415,
+      "p95": 0.21770289735868573,
+      "p99": 246.4347503967581
+    },
+    "wall_s": 596.701328956522
+  },
+  {
+    "burst_route_count_gate": true,
+    "client_queue_s": {
+      "mean": 6.326530290943049e-06,
+      "p50": 5.777925252914429e-06,
+      "p95": 1.033833250403403e-05,
+      "p99": 1.6354117542505253e-05
+    },
+    "completed": 1263,
+    "e2e_s": {
+      "mean": 24.456782807825356,
+      "p50": 16.19054565858096,
+      "p95": 43.70701204193754,
+      "p99": 419.92005198603493
+    },
+    "failed": 0,
+    "latency_classes": {
+      "all": {
+        "completed": 1263,
+        "e2e_s": {
+          "mean": 24.456782807825356,
+          "p95": 43.70701204193754,
+          "p99": 419.92005198603493
+        },
+        "tpot_s": {
+          "mean": 0.026469252441966178,
+          "p95": 0.028942249137672443,
+          "p99": 0.030133234412714864
+        },
+        "ttft_s": {
+          "mean": 0.183380587331756,
+          "p95": 0.22134798942133785,
+          "p99": 0.24076930696144688
+        }
+      },
+      "background": {
+        "completed": 1200,
+        "e2e_s": {
+          "mean": 18.096964320473685,
+          "p95": 39.74935485026799,
+          "p99": 66.07937115380533
+        },
+        "tpot_s": {
+          "mean": 0.0268417560913158,
+          "p95": 0.028995290897888916,
+          "p99": 0.030142931354297693
+        },
+        "ttft_s": {
+          "mean": 0.184308941642909,
+          "p95": 0.22164476425386964,
+          "p99": 0.24133294224739077
+        }
+      },
+      "burst_long": {
+        "completed": 21,
+        "e2e_s": {
+          "mean": 420.1452892119331,
+          "p95": 421.5587189020589,
+          "p99": 422.9903535911813
+        },
+        "tpot_s": {
+          "mean": 0.026250843802494782,
+          "p95": 0.02633642711480427,
+          "p99": 0.02642822516384142
+        },
+        "ttft_s": {
+          "mean": 0.1580392158191119,
+          "p95": 0.202221492305398,
+          "p99": 0.2067858401685953
+        }
+      },
+      "burst_short": {
+        "completed": 42,
+        "e2e_s": {
+          "mean": 8.321629244390698,
+          "p95": 8.5578715515323,
+          "p99": 8.568504277830943
+        },
+        "tpot_s": {
+          "mean": 0.015953233620729364,
+          "p95": 0.01642920853034274,
+          "p99": 0.0164618828193578
+        },
+        "ttft_s": {
+          "mean": 0.16952686419799215,
+          "p95": 0.20079301884397865,
+          "p99": 0.21430336812511083
+        }
+      }
+    },
+    "metrics": {
+      "first_waiting_s": 12.713826478458941,
+      "samples": 410,
+      "waiting_request_seconds_approx": 69.0,
+      "workers": {
+        "D0": {
+          "peak_kv": 0.8893805309734513,
+          "peak_running": 58.0,
+          "peak_waiting": 1.0,
+          "preemptions": 0.0
+        },
+        "D1": {
+          "peak_kv": 0.7614412136536031,
+          "peak_running": 56.0,
+          "peak_waiting": 1.0,
+          "preemptions": 0.0
+        },
+        "D2": {
+          "peak_kv": 0.9983565107458913,
+          "peak_running": 43.0,
+          "peak_waiting": 1.0,
+          "preemptions": 1.0
+        }
+      }
+    },
+    "preemptions": {
+      "per_request": {
+        "microburst-060": {
+          "preemptions": 1,
+          "recompute_tokens_approx": 15749
+        }
+      },
+      "records": [
+        {
+          "computed_tokens": 15749,
+          "preemption_count": 1,
+          "request_id": "microburst-060",
+          "worker": "D2"
+        }
+      ],
+      "total_preemptions": 1,
+      "total_recompute_tokens_approx": 15749
+    },
+    "request_throughput": 2.9699554243753936,
+    "response_headers_s": {
+      "mean": 0.058390320546376454,
+      "p50": 0.055652800016105175,
+      "p95": 0.07975720288231967,
+      "p99": 0.12169866016134617
+    },
+    "returncode": 0,
+    "routes": {
+      "assignments": {
+        "D0": {
+          "long": 7,
+          "output_tokens": 116096,
+          "requests": 15,
+          "short": 8
+        },
+        "D1": {
+          "long": 6,
+          "output_tokens": 106240,
+          "requests": 26,
+          "short": 20
+        },
+        "D2": {
+          "long": 8,
+          "output_tokens": 135168,
+          "requests": 22,
+          "short": 14
+        }
+      },
+      "first_completed_snapshot": [
+        3,
+        3,
+        2
+      ],
+      "last_completed_snapshot": [
+        3,
+        3,
+        2
+      ],
+      "routes": [
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-000",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-003",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-001",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-002",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-004",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-005",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-008",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-006",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-007",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-010",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-009",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-011",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-012",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-014",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-013",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-016",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-015",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-017",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-020",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-018",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-019",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-021",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-022",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-023",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-026",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-024",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-025",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-028",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-027",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-029",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-030",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-031",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-032",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-033",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-034",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-035",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-036",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-037",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-038",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-039",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-040",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-041",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-043",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-042",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-044",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-046",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-045",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-047",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-048",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-050",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-049",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-052",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-051",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-053",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-054",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D1"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-055",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-056",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-057",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D0"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-058",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-059",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-061",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-060",
+          "strategy": "token_balance",
+          "target_output_tokens": 16000,
+          "worker": "D2"
+        },
+        {
+          "completed_before": [
+            3,
+            3,
+            2
+          ],
+          "request_id": "microburst-062",
+          "strategy": "token_balance",
+          "target_output_tokens": 512,
+          "worker": "D1"
+        }
+      ],
+      "strict_completed_gate": true
+    },
+    "strategy": "token_balance",
+    "submitted": 1263,
+    "success_rate": 1.0,
+    "target_tokens": 1167503,
+    "token_throughput": 2745.39340286979,
+    "tpot_s": {
+      "mean": 0.026469252441966178,
+      "p50": 0.0270052240558494,
+      "p95": 0.028942249137672443,
+      "p99": 0.030133234412714864
+    },
+    "ttft_s": {
+      "mean": 0.183380587331756,
+      "p50": 0.18381619919091463,
+      "p95": 0.22134798942133785,
+      "p99": 0.24076930696144688
+    },
+    "wall_s": 425.25890780519694
+  }
+]

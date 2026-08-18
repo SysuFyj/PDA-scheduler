@@ -1,0 +1,20 @@
+{
+  "approved_at": "2026-08-17",
+  "approval_text": "APPROVE 1P3D GPU 1-4，×18 token-balance smoke；通过后执行 ×21 三策略正式对照，最长 90 分钟",
+  "gpu": [1, 2, 3, 4],
+  "topology": "1P3D",
+  "decode_gpu_memory_utilization": 0.55,
+  "smoke": {
+    "strategy": "token_balance",
+    "burst_cycles": 18,
+    "measurement_requests": 354,
+    "timeout_minutes": 12
+  },
+  "formal": {
+    "strategies": ["default_fcfs", "least_active", "token_balance"],
+    "burst_cycles": 21,
+    "measurement_requests_per_group": 1263,
+    "timeout_minutes_per_group": 30
+  },
+  "total_timeout_minutes": 90
+}

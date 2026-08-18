@@ -1,0 +1,60 @@
+{
+  "decode_gpu_memory_utilization": 0.55,
+  "finished_at": 1786963277.291802,
+  "gpu_map": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "peak_token_throughput": 5592.442444093504,
+  "scan_rates": [
+    8,
+    10,
+    12,
+    14
+  ],
+  "scan_requests": 2000,
+  "started_at": 1786959375.5405133,
+  "status": "completed",
+  "topology": "1P3D",
+  "trace_metadata": {
+    "baseline_mean_output_tokens": 670.2511111111111,
+    "burst_mean_output_tokens": 9467.68,
+    "burst_pattern": [
+      12000,
+      8192,
+      8192
+    ],
+    "last_arrival_offset_s": 646.6014432343261,
+    "peak_token_throughput": 5592.442444093504,
+    "phases": {
+      "burst": {
+        "end_s": 492.68051591329623,
+        "mean_output_tokens": 9467.68,
+        "offered_token_rate": 5592.442444093504,
+        "request_rate": 0.5906877338580838,
+        "requests": 200,
+        "start_s": 154.09214081077693
+      },
+      "post": {
+        "end_s": 646.7726567241159,
+        "mean_output_tokens": 651.4677777777778,
+        "offered_token_rate": 3805.002623203149,
+        "request_rate": 5.840661277496174,
+        "requests": 900,
+        "start_s": 492.68051591329623
+      },
+      "pre": {
+        "end_s": 154.09214081077693,
+        "mean_output_tokens": 689.0344444444445,
+        "offered_token_rate": 4024.416798527756,
+        "request_rate": 5.840661277496174,
+        "requests": 900,
+        "start_s": 0.0
+      }
+    },
+    "total_requests": 2000,
+    "total_target_tokens": 3099988
+  }
+}

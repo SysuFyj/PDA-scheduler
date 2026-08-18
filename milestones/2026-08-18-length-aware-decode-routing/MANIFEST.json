@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-18",
+  "title": "Length-aware Decode routing stage result",
+  "valid_experiments": [
+    {
+      "id": "1p3d_burst_20260817",
+      "design": "experiments/1p3d_burst_20260817/EXPERIMENT_PLAN.md",
+      "report": "outputs/1p3d_burst_20260817/FINAL_EXPERIMENT_REPORT.md",
+      "audit": "outputs/1p3d_burst_20260817/VALIDITY_AUDIT.md"
+    },
+    {
+      "id": "1p3d_microburst_20260817",
+      "design": "experiments/1p3d_microburst_20260817/EXPERIMENT_PLAN.md",
+      "report": "outputs/1p3d_microburst_20260817/FINAL_EXPERIMENT_REPORT.md",
+      "audit": "outputs/1p3d_microburst_20260817/VALIDITY_AUDIT.md"
+    }
+  ],
+  "raw_outputs_tracked": false,
+  "compact_results_tracked": true
+}

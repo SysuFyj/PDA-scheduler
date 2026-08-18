@@ -1,0 +1,6 @@
+[
+  {
+    "path": "../1p3d_microburst_20260817_excluded_attempt_path_match",
+    "reason": "Pre-service instrumentation path check matched both python3.1 symlink and python3.12 directory. No GPU service or measurement request started; vLLM was not modified."
+  }
+]

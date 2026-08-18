@@ -46,6 +46,8 @@ class RemoteSchedulerTest(unittest.IsolatedAsyncioTestCase):
 
             self.assertEqual(decode_a.decode.worker_id, "D0")
             self.assertEqual(decode_b.decode.worker_id, "D1")
+            self.assertEqual(decode_a.decode_completed_before, (0, 0))
+            self.assertEqual(decode_b.decode_completed_before, (0, 0))
             state = await worker_b.snapshot()
             self.assertEqual([item["active"] for item in state["decode"]], [1, 1])
 

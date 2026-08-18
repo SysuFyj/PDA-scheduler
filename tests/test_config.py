@@ -75,6 +75,32 @@ router: {{strategy: {strategy}}}
                 )
                 self.assertEqual(load_config(path).router.strategy, strategy)
 
+    def test_reservation_timeout_is_optional_and_must_be_positive(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "config.yaml"
+            path.write_text(
+                """
+model: test-model
+prefill: [{id: P0, url: http://127.0.0.1:8101}]
+decode: [{id: D0, url: http://127.0.0.1:8201}]
+router: {strategy: least_active, reservation_timeout_s: 30}
+""",
+                encoding="utf-8",
+            )
+            self.assertEqual(load_config(path).router.reservation_timeout_s, 30.0)
+
+            path.write_text(
+                """
+model: test-model
+prefill: [{id: P0, url: http://127.0.0.1:8101}]
+decode: [{id: D0, url: http://127.0.0.1:8201}]
+router: {strategy: least_active, reservation_timeout_s: 0}
+""",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "must be positive"):
+                load_config(path)
+
 
 if __name__ == "__main__":
     unittest.main()
